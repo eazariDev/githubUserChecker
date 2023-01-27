@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Github user search</title>
+</head>
+<body>
+  <main id="main">
+	<div class="card">
+		<div class="top">
+          <div>
+              <img class="avatar" id="avatar" src="./assets/user.png" alt="error loading image">
+          </div>
+          <div class="user-info">
+              <h2 id="name">Name</h2>
+              <h2 id="weblog">Blog address</h2>
+			  <h2 id="location">Location</h2>
+      </div>
+	 </div>
+	 <div class="bottom">
+		<p id="bio"> Biography of user</p>
+	 </div>
+	 </div>
+	 <div class="formbox">
+	<form id="form" onsubmit="return init();">
+    <input type="text" id="search" placeholder="Enter user id" />
+	<input type="submit" value="Submit">
+	<p id="error"></p>
+  </form>
+  </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
